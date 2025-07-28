@@ -1,0 +1,15 @@
+.slide {
+    width: 100%;
+    background-color: beige;
+    height: calc(100vh - 64px);
+}
+
+.slide > div {
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.swiperslide {
+    background-color: rgba(165, 42, 42, 0.666);
+}

@@ -1,0 +1,16 @@
+.header {
+    background-color: aqua;
+    width: 100%;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    padding: 20px 0px;
+}
+
+.navBarRight > ul {
+    display: flex;
+    gap: 40px;
+}
