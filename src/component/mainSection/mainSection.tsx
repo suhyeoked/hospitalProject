@@ -1,6 +1,6 @@
 import style from "@/component/mainSection/style.module.css"
 
-export default function mainSection() {
+export default function MainSection() {
     return(
         <div className={style.mainSection}>
             <div className={style.searchInput}>

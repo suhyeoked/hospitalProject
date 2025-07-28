@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react';
 import { Virtual, Navigation, Pagination } from 'swiper/modules';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide  } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper'; 
 import style from "@/component/doctorSection/style.module.css"
 // Import Swiper styles
 import 'swiper/css';
@@ -10,7 +11,7 @@ import 'swiper/css/navigation';
 // import './styles.css';
 
 export default function DoctorSection() {
-  const [swiperRef, setSwiperRef] = useState(null);
+  const [swiperRef, setSwiperRef] = useState<SwiperType | null>(null);
   const appendNumber = useRef(500);
   const prependNumber = useRef(1);
   // Create array with 500 slides
@@ -25,15 +26,15 @@ export default function DoctorSection() {
       ...slides,
     ]);
     prependNumber.current = prependNumber.current - 2;
-    swiperRef.slideTo(swiperRef.activeIndex + 2, 0);
+    swiperRef?.slideTo(swiperRef.activeIndex + 2, 0);
   };
 
   const append = () => {
     setSlides([...slides, 'Slide ' + ++appendNumber.current]);
   };
 
-  const slideTo = (index) => {
-    swiperRef.slideTo(index - 1, 0);
+  const slideTo = (index : number) => {
+    swiperRef?.slideTo(index - 1, 0);
   };
 
   return (
