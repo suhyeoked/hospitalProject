@@ -9,7 +9,7 @@ import 'swiper/css/navigation';
 
 // import './styles.css';
 
-export default function hospitalSection() {
+export default function HospitalSection() {
   const [swiperRef, setSwiperRef] = useState(null);
   const appendNumber = useRef(500);
   const prependNumber = useRef(1);
