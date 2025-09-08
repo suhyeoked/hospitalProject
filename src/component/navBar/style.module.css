@@ -10,7 +10,15 @@
     padding: 20px 0px;
 }
 
+.navBar > div {
+    cursor: pointer;
+}
+
 .navBarRight > ul {
     display: flex;
     gap: 40px;
+}
+
+.navBarRight > ul > li {
+    cursor: pointer;
 }
