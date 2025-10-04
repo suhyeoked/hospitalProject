@@ -1,24 +1,24 @@
 .header {
-    background-color: aqua;
+    background-color: #ffffff;
     width: 100%;
 }
 
-.navBar {
+.Logo {
     display: flex;
-    justify-content: space-between;
-    margin: 0 60px;
-    padding: 20px 0px;
-}
-
-.navBar > div {
+    align-items: center;
+    padding: 10px 0;
     cursor: pointer;
 }
 
-.navBarRight > ul {
-    display: flex;
-    gap: 40px;
+.Logo > img:first-child {
+    width: 30px;
+    height: 35px;
+    margin-left: 30px;
 }
 
-.navBarRight > ul > li {
-    cursor: pointer;
+.Logo > img:last-child {
+    width: 180px;
+    height: 26px;
+    margin-left: 20px;
 }
+    
